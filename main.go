@@ -1,17 +1,30 @@
 package main
 
-import (
-	"fmt"
-
-	"github.com/zalynskaya/diary-app.git/cmd"
-)
+import "fmt"
 
 func main() {
-	defer func() {
-	if err := recover(); err != nil {
-	fmt.Println("recovered from panic:", err) //обработка ошибки
+	// what is it?
+	fmt.Println("Do u elder than 18? (Y/N): ")
+	var input string
+	fmt.Scanln(&input)
+
+	if input == "Y" {
+
+	} else {
+		fmt.Println("Go away!")
 	}
-	}()
-	
-	cmd.Execute()
+}
+
+func addStrangeAction() {
+	fmt.Print("So cool!")
+	fmt.Println(" Do u like jokes? (Y/N): ")
+
+	var input string
+	fmt.Scanln(&input)
+
+	if input == "Y" {
+		fmt.Println("Did you hear about the medieval lamp? It's a knight light. ")
+	} else {
+		fmt.Println("I'm sorry, I didn't understand you.")
 	}
+}
