@@ -9,7 +9,7 @@ func main() {
 	fmt.Scanln(&input)
 
 	if input == "Y" {
-
+		addStrangeAction()
 	} else {
 		fmt.Println("Go away!")
 	}
