@@ -1,6 +1,6 @@
 module github.com/zalynskaya/diary-app.git
 
-go 1.21.1
+go 1.23
 
 require (
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
